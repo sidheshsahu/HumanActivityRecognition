@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Human Activity Recognition</h1>
+        <p>Upload an image to predict the activity</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Predict Activity</button>
+        </form>
+
+        {% if predicted_activity %}
+            <div class="result">
+                <h2>Prediction Result:</h2>
+                <p id="output">The predicted activity is: <strong>{{ predicted_activity }}</strong></p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
