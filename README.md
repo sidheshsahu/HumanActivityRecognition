@@ -21,6 +21,7 @@ Data Augmentation
 Performance Visualization
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/sidheshsahu/HumanActivityRecognition/blob/main/HAR.jpg)
+![App Screenshot](https://github.com/sidheshsahu/HumanActivityRecognition/blob/main/image1.png)
 
 
